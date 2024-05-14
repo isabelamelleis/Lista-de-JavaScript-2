@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de pagamento</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="ex2.js"></script>
+</head>
+<body>
+    <h1>Folha de Pagamento</h1>
+    <div id="formulario">
+        <form method="post">
+            <div>
+                <label for="nomeFuncionario">
+                    Nome do funcionário:
+                </label>
+                <br>
+                <input type="text" id="nomeFuncionario" name="nomeFuncionario" placeholder="Digite seu nome">
+            </div>
+            <br>
+            <div>
+                <label for="salarioBruto">
+                    Salário bruto:
+                </label>
+                <br>
+                <input type="number" id="salarioBruto" name="salarioBruto" placeholder="Digite seu salário">
+            </div>
+            <div>
+                <h4>
+                    Sua taxa de desconto do INSS é de 8%.
+                </h4>
+            </div>
+            <button id="calcularTaxa" type="button" onclick="folhaPagamento()">
+                Calcular taxa
+            </button>
+        </form>
+    </div>
+    <div id="mostrarResultados" class="displayNone">
+        <div class="displayFlex">
+            <p class="bold">
+                Nome do funcionário:
+            </p>
+            <p id="mostrarNomeFuncionario">
+            
+            </p>
+        </div>
+        <div class="displayFlex">
+            <p class="bold">
+                Salário bruto: 
+            </p>
+            <p id="mostrarSalarioBruto">
+            
+            </p>
+        </div>
+        <div class="displayFlex">
+            <p class="bold">
+                Valor do INSS:
+            </p>
+            <p id="mostrarValorINSS">
+
+            </p>
+        </div>
+        <div class="displayFlex">
+            <p class="bold">
+                Salário líquido:
+            </p>
+            <p id="mostrarSalarioLiquido">
+
+            </p>
+        </div>
+    </div>
+</body>
+</html>

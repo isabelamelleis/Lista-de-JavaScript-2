@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de taxa do INSS</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="ex3.js"></script>
+</head>
+<body>
+    <h1>Cálculo de taxa do INSS</h1>
+    <div id="formulario">
+        <form method="post">
+            <div>
+                <label for="salarioBruto">
+                    Salário bruto:
+                </label>
+                <br>
+                <input type="number" id="salarioBruto" name="salarioBruto" placeholder="Digite seu salário">
+            </div>
+            <br>
+            <button id="calcularTaxa" type="button" onclick="calcularTaxaINSS()">
+                Calcular
+            </button>
+        </form>
+    </div>
+    <div id="mostrarResultados" class="displayNone">
+        <div class="displayFlex">
+            <p class="bold">
+                Salário bruto: 
+            </p>
+            <p id="mostrarSalarioBruto">
+            
+            </p>
+        </div>
+        <div class="displayFlex">
+            <p class="bold">
+                Valor do INSS:
+            </p>
+            <p id="mostrarTaxaINSS">
+
+            </p>
+        </div>
+        <div class="displayFlex">
+            <p class="bold">
+                Valor do INSS:
+            </p>
+            <p id="mostrarValorINSS">
+
+            </p>
+        </div>
+        <div class="displayFlex">
+            <p class="bold">
+                Salário líquido:
+            </p>
+            <p id="mostrarSalarioLiquido">
+
+            </p>
+        </div>
+    </div>
+</body>
+</html>

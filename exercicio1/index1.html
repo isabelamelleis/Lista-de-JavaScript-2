@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="ex1.js"></script>
+</head>
+<body>
+    <div id="botoes">
+        <button type="button" onclick="diferenca()">
+            1º cálculo
+        </button>
+        <button type="button" onclick="dobroEtriplo()">
+            2º cálculo
+        </button>
+        <button type="button" onclick="multiplicacao()">
+            3º cálculo
+        </button>
+        <button type="button" onclick="mostrarQuartoCalculo()">
+            4º cálculo
+        </button>
+    </div>
+    <br>
+    <br>
+    <div id="formulario" class="displayNone">
+        <form method="post">
+            <div>
+                <label for="variavelA">
+                    Digite um número inteiro para a primeira variável:
+                </label>
+                <br>
+                <input type="number" id="variavelA" name="variavelA" placeholder="Digite">
+            </div>
+            <br>
+            <div>
+                <label for="variavelB">
+                    Digite um número inteiro para a segunda variável:
+                </label>
+                <br>
+                <input type="number" id="variavelB" name="variavelB" placeholder="Digite">
+            </div>
+            <br>
+            <button type="button" onclick="novasVariaveis()">
+                Fazer cálculo
+            </button>
+        </form>
+    </div>
+</body>
+</html>

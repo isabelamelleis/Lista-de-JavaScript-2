@@ -1,0 +1,41 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    background-color: rgb(185, 200, 214);
+    margin-left: 5px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.displayInline {
+    display: inline;
+}
+
+.bold {
+    font-size: large;
+    font-weight: bold;
+    margin-right: 1%;
+}
+
+button {
+    background-color:goldenrod;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color:goldenrod;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s;
+    transform: scale(1.1);
+}
